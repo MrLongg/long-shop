@@ -1,0 +1,72 @@
+/* Chung */
+.wrapper {
+    background-color: #ffac00;
+}
+
+/* Content */
+.content {
+    display: flex;
+    align-items: center;
+    height: 9.6rem;
+    margin: 0 34px;
+    padding: 15px 30px;
+}
+
+/* Left */
+.left {
+    display: flex;
+    flex: 7;
+    align-items: center;
+}
+
+.logo {
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    margin-left: 48px;
+
+    &:focus {
+    }
+}
+
+.search-bar {
+    border: 1px solid rgb(221, 221, 227);
+    border-radius: 2px;
+    width: 680px;
+    padding: 10px 15px;
+    margin-right: 12px;
+}
+
+.search-button {
+    position: absolute;
+    margin: 3px;
+    padding-top: 2px;
+    right: 12px;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: #f9bb01;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Right */
+.right {
+    flex: 1;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info-icon {
+    font-size: 1.8rem;
+    margin: 12px;
+    cursor: pointer;
+}

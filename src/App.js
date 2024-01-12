@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import classNames from 'classnames/bind';
+import styles from './App.module.scss';
+import Footer from './components/Layouts/Footer/Footer';
+import Header from './components/Layouts/Header/Header';
+import Sidebar from './components/Layouts/Sidebar/Sidebar';
+import Content from './components/Layouts/Content/Content';
+
+const cx = classNames.bind(styles);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <div className={cx('wrapper')}>
+                <Sidebar />
+                <Content />
+            </div>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
