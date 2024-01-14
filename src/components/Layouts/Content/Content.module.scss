@@ -1,4 +1,78 @@
 /* Chung */
 .wrapper {
+    margin-left: 20px;
     padding: 12px;
+    padding-block: 16px;
+    // height: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+/* Content */
+.content {
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: 600;
+    padding-left: 8px;
+}
+
+.see-all {
+    font-weight: 600;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+/* List item */
+.list-item {
+    display: flex;
+}
+
+.item {
+    margin: 0 8px;
+    border: 1px solid rgb(235, 235, 240);
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+        z-index: 1;
+    }
+}
+
+.img {
+    width: 175px;
+    height: 175px;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.description {
+    padding: 8px;
+}
+
+.name {
+    font-size: 1.4rem;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Số dòng tối đa trước khi áp dụng ellipsis */
+    -webkit-box-orient: vertical;
+}
+
+.star {
+    height: 12px;
+    width: 12px;
+}
+
+.price {
+    font-weight: 500;
 }

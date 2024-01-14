@@ -1,5 +1,8 @@
 /* Chung */
 .wrapper {
+    // margin: 16px 20px 0 64px;
+    width: 230px;
+
     padding: 12px 8px;
     margin-bottom: 16px;
     background-color: rgb(255, 255, 255);
@@ -46,6 +49,6 @@
     font-size: 1.4rem;
     line-height: 150%;
     color: rgb(39, 39, 42);
-    max-width: 100px;
+    max-width: 230px;
     word-wrap: break-word;
 }
